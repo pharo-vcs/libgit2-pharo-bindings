@@ -1,0 +1,1 @@
+Baseline for [https://github.com/pharo-vcs/libgit2-pharo-bindings](https://github.com/pharo-vcs/libgit2-pharo-bindings)
