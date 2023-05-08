@@ -4,8 +4,6 @@ createWith: aStructure urlUsername: urlUsername
 	self assert: self publicKeyReference exists.
 	self assert: self privateKeyReference exists.
 
-	urlUsername traceCr.
-
 	self withReturnHandlerDo: [
 		self
 			cred_ssh_key_new: aStructure
