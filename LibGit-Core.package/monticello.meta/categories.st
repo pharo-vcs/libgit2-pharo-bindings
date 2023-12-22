@@ -1,14 +1,1 @@
-SystemOrganization addCategory: #'LibGit-Core'!
-SystemOrganization addCategory: #'LibGit-Core-Abstracts'!
-SystemOrganization addCategory: #'LibGit-Core-CoreObjects'!
-SystemOrganization addCategory: #'LibGit-Core-Exceptions'!
-SystemOrganization addCategory: #'LibGit-Core-Exceptions-ReturnCodes'!
-SystemOrganization addCategory: #'LibGit-Core-FFI-Callbacks'!
-SystemOrganization addCategory: #'LibGit-Core-FFI-Callouts'!
-SystemOrganization addCategory: #'LibGit-Core-FFI-Enums'!
-SystemOrganization addCategory: #'LibGit-Core-FFI-Handling'!
-SystemOrganization addCategory: #'LibGit-Core-FFI-Structs'!
-SystemOrganization addCategory: #'LibGit-Core-HelperObjects'!
-SystemOrganization addCategory: #'LibGit-Core-Manifest'!
-SystemOrganization addCategory: #'LibGit-Core-NonCoreObjects'!
-SystemOrganization addCategory: #'LibGit-Core-Traits'!
+self packageOrganizer ensurePackage: #'LibGit-Core' withTags: #(#Abstracts #CoreObjects #Exceptions #'Exceptions-ReturnCodes' #'FFI-Callbacks' #'FFI-Callouts' #'FFI-Enums' #'FFI-Handling' #'FFI-Structs' #HelperObjects #Manifest #NonCoreObjects #Traits)!
