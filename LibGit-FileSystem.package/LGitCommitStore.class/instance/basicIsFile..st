@@ -1,4 +1,4 @@
 abstract
 basicIsFile: aLGitTreeEntry 
 	
-	^ aLGitTreeEntry object isBlob
+	^ aLGitTreeEntry type = LGitObjectTypeEnum git_obj_blob
