@@ -1,9 +1,11 @@
 {
 	"classtraitcomposition" : "TLGitCalloutTrait classTrait + TLGitPrintingTrait classTrait",
-	"classvars" : [ ],
+	"classvars" : [
+		"FinalizeMutex"
+	],
 	"instvars" : [ ],
 	"name" : "LGitExternalStructure",
-	"commentStamp" : "MaxLeske 3/1/2015 20:36",
+	"commentStamp" : "2026-03-25T21:34:16.538085+01:00",
 	"super" : "FFIExternalStructure",
 	"traitcomposition" : "TLGitCalloutTrait + TLGitPrintingTrait",
 	"type" : "normal",
