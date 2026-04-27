@@ -6,4 +6,7 @@ autoRelease
 	Note: subclasses should implement #resourceData
 	and #finalizeResourceData: on class side"
 	
+	(FFIExternalResourceManager uniqueInstance includes: self) 
+		ifTrue: [ ^ self ].	
+	
 	FFIExternalResourceManager addResource: self
