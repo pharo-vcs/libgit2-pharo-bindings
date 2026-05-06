@@ -4,8 +4,8 @@ hackOwner: aRepository
 	 owner (a pointer to a repository), as you would expect from the documentation. 
 	This breaks libgit encapsulation, and will probably fail if updating to a newer 
 	version, but anyway if we migrate this bug should be fixed."
-	self flag: #fixMe. "When possible :)"
-	"
+
+	self flag: #fixMe. "When possible :)" "
 	NOTE: is Smalltalk wordSize + 1 because the structure is something like: 
 	struct git_index {
 		git_refcount rc;
@@ -25,6 +25,6 @@ hackOwner: aRepository
 	
 	So we need to ensure the owner is set properly.
 	"
-	self handle 
-		pointerAt: Smalltalk wordSize + 1
-		put: repository handle
+	self getHandle 
+		pointerAt: Smalltalk wordSize + 1 
+		put: repository getHandle
