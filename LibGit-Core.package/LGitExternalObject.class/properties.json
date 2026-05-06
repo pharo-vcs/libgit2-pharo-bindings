@@ -5,7 +5,7 @@
 	],
 	"instvars" : [ ],
 	"name" : "LGitExternalObject",
-	"commentStamp" : "2026-04-24T18:27:45.532609+02:00",
+	"commentStamp" : "2026-04-12T17:58:41.899084+02:00",
 	"super" : "FFIExternalObject",
 	"traitcomposition" : "TLGitPrintingTrait + TLGitCalloutTrait",
 	"type" : "normal",

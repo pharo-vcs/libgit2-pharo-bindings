@@ -1,7 +1,6 @@
 finalization
 free
 
-	(handle isExternalAddress and: [ handle isNullOrNil not]) 
-		ifFalse: [ ^ self ].
+	handle isExternalAddress ifFalse: [ ^ self ].
 	self class finalizeResourceData: handle.
 	self assert: handle isNull
