@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #BaselineOfLibGit!
+self packageOrganizer ensurePackage: #BaselineOfLibGit withTags: #()!

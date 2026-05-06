@@ -4,23 +4,22 @@ baseline: spec
   spec
     for: #(common)
     do: [ 
-      spec
-		  postLoadDoIt: #'postload:package:';
-    	  package: 'LibGit-FileSystem' with: [ spec requires: 'LibGit-Core' ];    
-		  package: 'LibGit-Tests' with: [ spec requires: 'LibGit-Core' ];
-        package: 'LibGit-GT' with: [ spec requires: 'LibGit-Core' ];
-        package: 'LibGit-Patches' with: [ spec requires: 'LibGit-Core' ];
-        package: 'LibGit-Core'.
-      spec
-        group: 'default'
-        with: #('LibGit-Core' 'LibGit-FileSystem').
+		spec
+			postLoadDoIt: #'postLoad';
+			package: 'LibGit-FileSystem' with: [ spec requires: 'LibGit-Core' ];    
+			package: 'LibGit-Tests' with: [ spec requires: 'LibGit-Core' ];
+			package: 'LibGit-GT' with: [ spec requires: 'LibGit-Core' ];
+			package: 'LibGit-Patches' with: [ spec requires: 'LibGit-Core' ];
+			package: 'LibGit-Core'.
+		spec
+		    group: 'default'
+		    with: #('LibGit-Core' 'LibGit-FileSystem').
 		spec
 			group: 'development'
 			with: #('default' 'LibGit-Tests' 'LibGit-Patches' 'LibGit-GT').
 		spec
 			group: 'tests'
 			with: #('LibGit-Tests').
-
 		spec
 			for: #'pharo7.x'
 			do: [ spec
