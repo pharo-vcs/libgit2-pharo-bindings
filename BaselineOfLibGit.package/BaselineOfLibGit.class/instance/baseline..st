@@ -5,7 +5,7 @@ baseline: spec
     for: #(common)
     do: [ 
 		spec
-			postLoadDoIt: #'postLoad';
+			postLoadDoIt: #'postload:package:';
 			package: 'LibGit-FileSystem' with: [ spec requires: 'LibGit-Core' ];    
 			package: 'LibGit-Tests' with: [ spec requires: 'LibGit-Core' ];
 			package: 'LibGit-GT' with: [ spec requires: 'LibGit-Core' ];
