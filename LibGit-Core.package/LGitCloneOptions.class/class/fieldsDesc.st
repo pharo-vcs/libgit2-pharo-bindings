@@ -1,6 +1,8 @@
 accessing
 fieldsDesc
-	^#(
+	"self rebuildFieldAccessors"
+	
+	^ #(	
 		LGitOptionsVersionsEnum version;
 		
 		"

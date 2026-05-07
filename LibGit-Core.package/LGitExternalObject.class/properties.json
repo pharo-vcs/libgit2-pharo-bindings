@@ -1,9 +1,11 @@
 {
 	"classtraitcomposition" : "TLGitPrintingTrait classTrait + TLGitCalloutTrait classTrait",
-	"classvars" : [ ],
+	"classvars" : [
+		"FinalizeMutex"
+	],
 	"instvars" : [ ],
 	"name" : "LGitExternalObject",
-	"commentStamp" : "TorstenBergmann 6/2/2021 23:18",
+	"commentStamp" : "2026-04-12T17:58:41.899084+02:00",
 	"super" : "FFIExternalObject",
 	"traitcomposition" : "TLGitPrintingTrait + TLGitCalloutTrait",
 	"type" : "normal",

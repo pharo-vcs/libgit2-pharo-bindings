@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "TorstenBergmann 6/2/2021 22:34",
+	"commentStamp" : "2026-03-19T20:36:44.468587+01:00",
 	"super" : "FFICallback",
 	"category" : "LibGit-Core-FFI-Callbacks",
 	"classinstvars" : [ ],
