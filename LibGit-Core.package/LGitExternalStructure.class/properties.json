@@ -5,7 +5,7 @@
 	],
 	"instvars" : [ ],
 	"name" : "LGitExternalStructure",
-	"commentStamp" : "2026-04-12T17:58:41.899084+02:00",
+	"commentStamp" : "2026-05-07T12:01:37.18883+02:00",
 	"super" : "FFIExternalStructure",
 	"traitcomposition" : "TLGitCalloutTrait + TLGitPrintingTrait",
 	"type" : "normal",
