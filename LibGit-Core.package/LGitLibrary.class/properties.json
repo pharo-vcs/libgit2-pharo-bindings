@@ -4,7 +4,9 @@
 	"category" : "LibGit-Core-FFI-Handling",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"LastCompilationPlatform"
+	],
 	"instvars" : [
 		"initialized"
 	],
