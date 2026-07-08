@@ -8,7 +8,9 @@ fetchOptionsStructureClass
 		ifTrue: [ ^ LGitFetchOptionsV100 ].
 	(self ffiLibrary uniqueInstance isVersionLessThan: #(1 4))
 		ifTrue: [ ^ LGitFetchOptionsV120 ].
-	(self ffiLibrary uniqueInstance isVersionLessThan: #(1 9))
-		ifTrue: [ ^ LGitFetchOptionsV140 ].
+		
+	"This struct is valid between 1.6.4 and 1.7.2"
+	(self ffiLibrary uniqueInstance isVersionLessThan: #(1 8))
+		ifTrue: [ ^ LGitFetchOptionsV160 ].
 		
 	^ LGitFetchOptionsV190
