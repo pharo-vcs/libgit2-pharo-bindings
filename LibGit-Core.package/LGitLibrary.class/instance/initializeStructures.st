@@ -1,7 +1,7 @@
 operations
 initializeStructures
 
-	| currentCompilationPlatform |
+	| currentLibgitVersion |
 	Smalltalk environment
 		at: #LGitBlameHunk put: self blameHunkStructureClass;
 		at: #LGitFetchOptions put: self fetchOptionsStructureClass;
@@ -9,11 +9,9 @@ initializeStructures
 		at: #LGitRemoteCallbacks put: self remoteCallbacksStructureClass.
 
 	"Reset the method registry after changing struct aliases.
-	Only do it if we change the platform"	
-	currentCompilationPlatform := {
-		                              OSPlatform current family.
-		                              Smalltalk vm wordSize }.
-	LastCompilationPlatform = currentCompilationPlatform ifTrue: [ ^ self ].
+	Only do it if we change libgit version"	
+	currentLibgitVersion := self version.
+	LastLibgitVersion = currentLibgitVersion ifTrue: [ ^ self ].
 
-	LastCompilationPlatform := currentCompilationPlatform.
+	LastLibgitVersion := currentLibgitVersion.
 	FFIMethodRegistry resetAll
