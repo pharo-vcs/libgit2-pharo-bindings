@@ -6,7 +6,7 @@ baseline: spec
     do: [
       spec
     	  package: 'LibGit-FileSystem' with: [ spec requires: 'LibGit-Core' ];    
-		  package: 'LibGit-Tests' with: [ spec requires: 'LibGit-Core' ];
+		    package: 'LibGit-Tests' with: [ spec requires: 'LibGit-Core' ];
         package: 'LibGit-Patches' with: [ spec requires: 'LibGit-Core' ];
         package: 'LibGit-Core'.
       spec
