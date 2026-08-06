@@ -1,7 +1,5 @@
 field definition
 fieldsDesc
-	"self rebuildFieldAccessors"
-
 	^ #(
 		LGitOptionsVersionsEnum version;
 
@@ -36,11 +34,14 @@ fieldsDesc
 		LGitProxyOptions proxy_opts;
 		
 		"
-		 * Whether to allow off-site redirects.  If this is not
-		 * specified, the `http.followRedirects` configuration setting
-		 * will be consulted.
+		 * Depth of the fetch to perform, or GIT_FETCH_DEPTH_FULL (or 0) for full history, or GIT_FETCH_DEPTH_UNSHALLOW to ""unshallow"" a shallow repository.
+			The default is full (GIT_FETCH_DEPTH_FULL or 0)."
+		int depth;
+
+		" 
+		 * Whether to allow off-site redirects. If this is not specified, the http.followRedirects configuration setting will be consulted.
 		"
-		LGitRemoteRedirectEnum follow_redirects;	
+		LGitRemoteRedirectEnum follow_redirects;
 
 		"
 	  	 * Extra headers for this fetch operation

@@ -1,12 +1,13 @@
 {
 	"commentStamp" : "",
 	"super" : "LGitAbstractFetchOptions",
-	"category" : "LibGit-Core",
+	"category" : "LibGit-Core-FFI-Structs",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [
 		"OFFSET_PRIM_CALLBACKS",
 		"OFFSET_PRIM_CUSTOM_HEADERS",
+		"OFFSET_PRIM_DEPTH",
 		"OFFSET_PRIM_DOWNLOAD_TAGS",
 		"OFFSET_PRIM_FOLLOW_REDIRECTS",
 		"OFFSET_PRIM_PROXY_OPTS",

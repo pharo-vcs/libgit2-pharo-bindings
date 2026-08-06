@@ -7,6 +7,7 @@
 	"classvars" : [
 		"OFFSET_PRIM_CALLBACKS",
 		"OFFSET_PRIM_CUSTOM_HEADERS",
+		"OFFSET_PRIM_DEPTH",
 		"OFFSET_PRIM_DOWNLOAD_TAGS",
 		"OFFSET_PRIM_FOLLOW_REDIRECTS",
 		"OFFSET_PRIM_PROXY_OPTS",
@@ -15,6 +16,6 @@
 		"OFFSET_PRIM_VERSION"
 	],
 	"instvars" : [ ],
-	"name" : "LGitFetchOptionsV140",
+	"name" : "LGitFetchOptionsV160",
 	"type" : "normal"
 }
