@@ -1,5 +1,5 @@
 accessing - values
 git_checkout_safe
 	^ self basicNew
-		value: 1;
+		value: 0;
 		yourself

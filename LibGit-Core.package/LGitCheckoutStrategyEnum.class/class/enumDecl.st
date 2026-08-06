@@ -1,10 +1,8 @@
 enum description
 enumDecl
 	^ #(
-		GIT_CHECKOUT_NONE  0 "< default is a dry run, no actual updates "
-
 		" Allow safe updates that cannot overwrite uncommitted data "
-		GIT_CHECKOUT_SAFE  "1 bitShift: 0" 1
+		GIT_CHECKOUT_SAFE  0
 
 		" Allow all updates to force working directory to look like index "
 		GIT_CHECKOUT_FORCE  "1 bitShift: 1" 2
@@ -61,7 +59,7 @@ enumDecl
 
 		" Normally checkout writes the index upon completion; this prevents that. "
 		GIT_CHECKOUT_DONT_WRITE_INDEX  "1 bitShift: 23" 8388608
-
+		
 		"
 		 * THE FOLLOWING OPTIONS ARE NOT YET IMPLEMENTED
 		 "

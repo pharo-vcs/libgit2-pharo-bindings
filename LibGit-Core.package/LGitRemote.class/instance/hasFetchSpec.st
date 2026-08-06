@@ -1,3 +1,3 @@
 testing
 hasFetchSpec
-	^ self fetchSpec notNil
+	^ self fetchSpec isNotNil

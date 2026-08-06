@@ -19,7 +19,7 @@ testPushHTTPS
 		tree: tree;
 		message: 'push test';
 		parents: {head};
-		updateReference: repo master;
+		updateReference: (repo lookupBranch: 'master');
 		author: author;
 		committer: author;
 		writeCommit.
@@ -27,7 +27,9 @@ testPushHTTPS
 	credentials := remote class credentialsPlaintext.
 	credentialsCallback := LGitCredAcquireCallback
 		on: [ :cred :url :username_from_url :allowed_types :data | 
-			credentials createWith: cred.
+			credentials 
+				createWith: cred 
+				urlUsername: remote class usernameSsh.
 			0 ].
 	self
 		shouldnt: [

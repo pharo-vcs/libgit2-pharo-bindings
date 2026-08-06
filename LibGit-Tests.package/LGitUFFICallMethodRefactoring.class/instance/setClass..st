@@ -1,4 +1,4 @@
-as yet unclassified
+preconditions
 setClass: aClass
 
 	class := self classObjectFor: aClass

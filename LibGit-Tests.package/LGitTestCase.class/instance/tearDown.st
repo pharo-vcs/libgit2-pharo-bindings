@@ -1,4 +1,5 @@
 running
 tearDown
-	super tearDown.
-	repository ifNotNil: [ repository free ]
+
+	repository ifNotNil: [ repository free ].
+	super tearDown	

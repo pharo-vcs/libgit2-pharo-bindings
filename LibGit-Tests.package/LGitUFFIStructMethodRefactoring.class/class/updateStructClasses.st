@@ -1,4 +1,4 @@
-as yet unclassified
+updating
 updateStructClasses
 
 	LGitExternalStructure allSubclassesDo: [ :eachClass |

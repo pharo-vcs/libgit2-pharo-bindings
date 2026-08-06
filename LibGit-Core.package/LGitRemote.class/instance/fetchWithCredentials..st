@@ -2,5 +2,7 @@ operations
 fetchWithCredentials: aCredentialsProvider
 	
 	^ self
-		fetchWithCredentials: aCredentialsProvider
-		refSpec: nil
+		  fetchWithCredentials: aCredentialsProvider
+		  andProgressCallback: nil
+		  refSpec: nil
+		  proxyConfigurationBlock: [ :proxyOpts |  ]

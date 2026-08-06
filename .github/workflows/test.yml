@@ -1,0 +1,24 @@
+name: Tests
+
+on: [ push, pull_request ]
+
+jobs:
+  tests:
+    strategy:
+      fail-fast: false
+      matrix:
+        smalltalk: [ Pharo64-alpha ]
+        os: [ ubuntu-latest, macOS-latest ]
+        ston: [ .smalltalk.ston ]
+    runs-on: ${{ matrix.os }}
+    name: ${{ matrix.smalltalk }} on ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup smalltalkCI
+        uses: hpi-swa/setup-smalltalkCI@v1
+        with:
+          smalltalk-version: ${{ matrix.smalltalk }}
+      - name: Load Image and Run Tests
+        run: smalltalkci -s ${{ matrix.smalltalk }} ${{ matrix.ston }}
+        shell: bash
+        timeout-minutes: 30

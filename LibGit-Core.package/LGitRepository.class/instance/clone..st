@@ -1,7 +1,8 @@
 operations
 clone: aString
 	| cloneOptions |
-	cloneOptions := self cloneOptionsStructureClass defaults.
+	
+	cloneOptions := LGitCloneOptions defaults.
 	self
 		clone: aString
 		options: cloneOptions

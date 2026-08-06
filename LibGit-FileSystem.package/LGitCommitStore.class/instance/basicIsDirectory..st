@@ -1,4 +1,4 @@
 abstract
 basicIsDirectory: aNode
 	
-	^ aNode object isTree
+	^ aNode type = LGitObjectTypeEnum git_obj_tree

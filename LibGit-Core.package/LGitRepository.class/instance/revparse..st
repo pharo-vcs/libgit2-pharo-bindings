@@ -9,8 +9,8 @@ revparse: aString
 	"
 
 	| object |
-	self assert: aString notNil.
-	self assert: aString trimBoth notEmpty.
+	self assert: aString isNotNil.
+	self assert: aString trimBoth isNotEmpty.
 	object := LGitObject of: self.
 	self withReturnHandlerDo: [ 
 		self

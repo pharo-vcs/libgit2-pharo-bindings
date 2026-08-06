@@ -1,4 +1,4 @@
-initialize-release
+external resource management
 resourceData
 
 	^ self getHandle

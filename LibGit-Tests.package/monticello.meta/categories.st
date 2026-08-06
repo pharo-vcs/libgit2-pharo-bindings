@@ -1,3 +1,1 @@
-SystemOrganization addCategory: #'LibGit-Tests'!
-SystemOrganization addCategory: #'LibGit-Tests-Helpers'!
-SystemOrganization addCategory: #'LibGit-Tests-Manual'!
+self packageOrganizer ensurePackage: #'LibGit-Tests' withTags: #('Helpers' 'Manual')!

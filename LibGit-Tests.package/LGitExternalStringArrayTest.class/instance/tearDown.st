@@ -1,7 +1,5 @@
 running
 tearDown
-	super tearDown.
 	
-	array ifNil: [ ^ self ].
-	
-	array free
+	array ifNotNil: [ array free ].
+	super tearDown

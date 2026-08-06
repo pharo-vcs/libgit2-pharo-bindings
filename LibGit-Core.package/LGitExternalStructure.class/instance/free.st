@@ -1,4 +1,4 @@
-initialize-release
+finalization
 free
 
 	(handle isExternalAddress and: [ handle isNull not ])

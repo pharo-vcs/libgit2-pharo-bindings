@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testClean
 	| repo |
 	repo := LGitTestRepository tearDown; state4WithCommit. 

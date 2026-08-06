@@ -1,8 +1,8 @@
 operations
 checkout: aString options: options
 	<todo: 'use proper exceptions'>
-	self assert: aString notNil.
-	self assert: aString trimBoth notEmpty.
+	self assert: aString isNotNil.
+	self assert: aString trimBoth isNotEmpty.
 	[ 
 		| branch |
 		branch := self 

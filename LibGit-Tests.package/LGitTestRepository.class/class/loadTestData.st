@@ -6,8 +6,8 @@ loadTestData
 	| dictionary |
 "	(testDataLoaded notNil and: [ testDataLoaded ]) ifTrue: [ ^ self ]. Reload everytime"
 	testDataLoaded := true.
-	(FileSystem workingDirectory / 'test_data.json') exists ifFalse: [ ^ self ].
 	
+	(FileSystem workingDirectory / 'test_data.json') exists ifFalse: [ ^ self ].
 	(FileSystem workingDirectory / 'test_data.json') readStreamDo: [ :stream |
 		dictionary := STONJSON fromStream: stream ].
 

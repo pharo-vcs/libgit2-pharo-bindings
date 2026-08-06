@@ -6,7 +6,7 @@ fieldsDesc
 		"
 		 * Callbacks to use for this fetch operation
 		 "
-		#LGitRemoteCallbacksV02x callbacks;
+		LGitRemoteCallbacks callbacks;
 
 		"
 		 * Whether to perform a prune after the fetch

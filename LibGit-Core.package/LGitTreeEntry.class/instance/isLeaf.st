@@ -1,4 +1,4 @@
 testing
 isLeaf
 
-	^ self object isTree
+	^ self type = LGitObjectTypeEnum git_obj_tree

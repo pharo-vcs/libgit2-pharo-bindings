@@ -1,0 +1,35 @@
+SmalltalkCISpec {
+  #preLoading : './scripts/preLoading.st',
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline : 'LibGit',
+      #directory : '.',
+      #load : [ 'LibGit-Tests' ],
+      #platforms : [ #pharo ]
+    }
+  ],
+  #preTesting : './scripts/preTesting.st',
+  #testing : {
+  	#include : { 
+  		#packages : [ '.*' ] 
+  	},
+  	#exclude : {
+  		#packages : [ 
+  			'GT-Tests.*', 
+  			'Glamour-Tests.*',
+  			'UnifiedFFI.*',
+  			'ThreadedFFI.*',
+  			'Monticello.*',
+  			'Metacello.*',
+  			'System-Settings-Tests.*',
+  			'RPackage.*',
+  			'ReleaseTests.*' ],
+  		#classes : [
+  			#OutOfMemoryTest,
+  			#TraitFileOutTest,
+  			#PlatformResolverTest,
+  			#ProcessSpecificTest
+  		] 
+  	}
+  }  
+}

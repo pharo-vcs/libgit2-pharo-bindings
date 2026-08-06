@@ -1,3 +1,3 @@
 testing
 isBlob
-	^ self object isBlob
+	^ self type = LGitObjectTypeEnum git_obj_blob

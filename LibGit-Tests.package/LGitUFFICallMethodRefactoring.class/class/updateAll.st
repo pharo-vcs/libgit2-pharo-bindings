@@ -1,4 +1,4 @@
-as yet unclassified
+updating
 updateAll
 
 	LGitExternalObject allSubclassesDo: [ :each |

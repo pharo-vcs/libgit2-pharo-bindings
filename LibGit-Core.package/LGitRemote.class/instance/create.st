@@ -1,7 +1,7 @@
 operations
 create
 	<todo: 'use exceptions instead of assertions'>
-	self assert: url notNil.
+	self assert: url isNotNil.
 	self assert: self repository isReady.
 	
 	[ self hasFetchSpec

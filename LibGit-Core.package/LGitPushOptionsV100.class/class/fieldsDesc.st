@@ -16,7 +16,7 @@ fieldsDesc
 	"
 	 * Callbacks to use for this push operation
 	 "
-	LGitRemoteCallbacksV100 callbacks;
+	LGitRemoteCallbacks callbacks;
 		
 	"
 	* Proxy options to use, by default no proxy is used.

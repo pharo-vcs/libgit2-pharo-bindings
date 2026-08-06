@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #'LibGit-FileSystem'!
+self packageOrganizer ensurePackage: #'LibGit-FileSystem' withTags: #()!

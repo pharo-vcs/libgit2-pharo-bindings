@@ -1,4 +1,4 @@
-initialize-release
+external resource management
 autoRelease
 	"Some LGit structures need specialised free functions. Use the same autoRelease functionality
 	as FFIExternalReference to achieve this.

@@ -9,7 +9,9 @@ testPullSSH
 	credentials := remote class credentialsSsh.
 	credentialsCallback := LGitCredAcquireCallback
 		on: [ :cred :url :username_from_url :allowed_types :data | 
-			credentials createWith: cred.
+			credentials 
+				createWith: cred 
+				urlUsername: remote class usernameSsh.
 			0 ].
 	options := (repo ffiLibrary uniqueInstance fetchOptionsStructureClass defaults
 		callbacks: (self ffiLibrary uniqueInstance remoteCallbacksStructureClass defaults
