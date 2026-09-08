@@ -1,7 +1,10 @@
 libgit - calls
 remote_connect: remote direction: direction callbacks: remoteCallbacks
-	
-	^ self
-		ffiCallSafely:
-			#(LGitReturnCodeEnum git_remote_connect #(self , LGitDirectionEnum direction , LGitRemoteCallbacks * remoteCallbacks))
-		options: #()
+
+	^ (self ffiLibrary uniqueInstance isVersionLessThan: #(1 2))
+		  ifTrue: [ self shouldBeImplemented ]
+		  ifFalse: [
+				self
+				  remote_connect_v120: remote
+				  direction: direction
+				  callbacks: remoteCallbacks ]
