@@ -2,7 +2,7 @@ libgit - calls
 commit_parentcount: commit
 
 	                                                               ^ self
-		                                                                 ffiCallSafely:
+		                                                                 ffiCall:
 		                                                                 #( #uint
 		                                                                    #git_commit_parentcount
 		                                                                    #( #self ) )

@@ -1,6 +1,6 @@
 libgit - calls
 revwalk_push: commitId
 	^ self 
-		ffiCallSafely:
+		ffiCall:
 			#(LGitReturnCodeEnum git_revwalk_push #(self , LGitId * commitId))
 		options: #()

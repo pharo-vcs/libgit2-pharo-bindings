@@ -1,4 +1,4 @@
 libgit - calls
 revwalk_free: handle
 	
-	^ self ffiCallSafely: #(void git_revwalk_free #(void *handle)) options: #()
+	^ self ffiCall: #(void git_revwalk_free #(void *handle)) options: #()

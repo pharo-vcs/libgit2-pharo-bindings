@@ -2,7 +2,7 @@ libgit - calls
 commit_author: commit
 
 	                                                               ^ self
-		                                                                 ffiCallSafely:
+		                                                                 ffiCall:
 		                                                                 #( #LGitSignature
 		                                                                    #*
 		                                                                    #git_commit_author

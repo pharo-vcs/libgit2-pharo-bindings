@@ -1,4 +1,4 @@
 libgit - calls
 tree_free: handle
 	
-	^ self ffiCallSafely: #(void git_tree_free #(void *handle)) options: #()
+	^ self ffiCall: #(void git_tree_free #(void *handle)) options: #()

@@ -1,4 +1,4 @@
 libgit - calls
 commit_free: handle
 	
-	^ self ffiCallSafely: #(void git_commit_free #(void *handle)) options: #()
+	^ self ffiCall: #(void git_commit_free #(void *handle)) options: #()

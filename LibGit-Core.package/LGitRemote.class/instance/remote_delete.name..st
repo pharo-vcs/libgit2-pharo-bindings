@@ -2,6 +2,6 @@ libgit - calls
 remote_delete: repo name: name
 	
 	^ self
-		ffiCallSafely:
+		ffiCall:
 			#(LGitReturnCodeEnum git_remote_delete #(LGitRepository repo , String name))
 		options: #()

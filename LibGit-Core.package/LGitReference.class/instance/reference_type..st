@@ -2,7 +2,7 @@ libgit - calls
 reference_type: ref
 
 	                                                               ^ self
-		                                                                 ffiCallSafely:
+		                                                                 ffiCall:
 		                                                                 #( #LGitReferenceTypeEnum
 		                                                                    #git_reference_type
 		                                                                    #( #self ) )

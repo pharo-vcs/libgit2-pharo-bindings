@@ -2,7 +2,7 @@ libgit - calls
 remote_url
 
 	                                                               ^ self
-		                                                                 ffiCallSafely:
+		                                                                 ffiCall:
 		                                                                 #( #String
 		                                                                    #git_remote_url
 		                                                                    #( #self ) )

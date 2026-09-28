@@ -2,7 +2,7 @@ libgit - calls
 giterr_last
 
 	                                                               ^ self
-		                                                                 ffiCallSafely:
+		                                                                 ffiCall:
 		                                                                 #( #void
 		                                                                    #*
 		                                                                    #giterr_last

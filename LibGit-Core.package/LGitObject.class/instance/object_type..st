@@ -2,7 +2,7 @@ libgit - calls
 object_type: obj
 
 	                                                               ^ self
-		                                                                 ffiCallSafely:
+		                                                                 ffiCall:
 		                                                                 #( #LGitObjectTypeEnum
 		                                                                    #git_object_type
 		                                                                    #( #self ) )

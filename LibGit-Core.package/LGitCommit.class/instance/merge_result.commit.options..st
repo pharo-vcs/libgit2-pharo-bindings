@@ -1,7 +1,7 @@
 libgit - calls
 merge_result: out commit: anotherCommit options: options
 
-	^ self ffiCallSafely: #(
+	^ self ffiCall: #(
 		LGitReturnCodeEnum git_merge_commits(
 			LGitIndex *out, 
 			LGitRepository repository, 

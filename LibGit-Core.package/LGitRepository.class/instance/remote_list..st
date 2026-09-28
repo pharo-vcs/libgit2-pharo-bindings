@@ -2,7 +2,7 @@ libgit - calls
 remote_list: out
 
 	                                                               ^ self
-		                                                                 ffiCallSafely:
+		                                                                 ffiCall:
 		                                                                 #( #int
 		                                                                    #git_remote_list
 		                                                                    #( #LGitStringArray

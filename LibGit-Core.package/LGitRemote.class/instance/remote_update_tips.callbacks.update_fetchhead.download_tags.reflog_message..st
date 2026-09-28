@@ -2,7 +2,7 @@ libgit - calls
 remote_update_tips: remote callbacks: remoteCallbacks update_fetchhead: update_fetchhead download_tags: download_tags reflog_message: reflog_message
 	
 	^ self
-		ffiCallSafely: #(LGitReturnCodeEnum git_remote_update_tips #(
+		ffiCall: #(LGitReturnCodeEnum git_remote_update_tips #(
 			self, 
 			LGitRemoteCallbacks* remoteCallbacks, 
 			Boolean update_fetchhead, 

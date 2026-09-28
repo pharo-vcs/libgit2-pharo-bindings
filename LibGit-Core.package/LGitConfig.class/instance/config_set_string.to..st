@@ -1,7 +1,7 @@
 libgit - calls
 config_set_string: name to: value
 
-	^ self ffiCallSafely:
+	^ self ffiCall:
 			#(LGitReturnCodeEnum git_config_set_string(
 				self, 
 				String name, 

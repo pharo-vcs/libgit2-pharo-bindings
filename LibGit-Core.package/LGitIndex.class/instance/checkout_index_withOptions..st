@@ -2,7 +2,7 @@ libgit - calls
 checkout_index_withOptions: opts
 
 	^ self
-		ffiCallSafely: #(LGitReturnCodeEnum 
+		ffiCall: #(LGitReturnCodeEnum 
 			git_checkout_index(
 				LGitRepository repository, 
 				self, 

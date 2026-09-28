@@ -2,7 +2,7 @@ libgit - calls
 resetTo: target resetType: aResetType checkoutOptions: checkout_opts
 
 	                                                               ^ self
-		                                                                 ffiCallSafely:
+		                                                                 ffiCall:
 			                                                                 #( #LGitReturnCodeEnum
 			                                                                    #git_reset
 			                                                                    #( #self

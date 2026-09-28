@@ -2,5 +2,5 @@ accessing
 owner
 
 	^ self 
-		ffiCallSafely: #(void *git_commit_owner(self)) 
+		ffiCall: #(void *git_commit_owner(self)) 
 		options: #()

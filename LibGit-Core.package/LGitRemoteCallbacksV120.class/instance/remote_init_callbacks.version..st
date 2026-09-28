@@ -2,7 +2,7 @@ libgit - calls
 remote_init_callbacks: opts version: version
 
 	                                                               ^ self
-		                                                                 ffiCallSafely:
+		                                                                 ffiCall:
 			                                                                 #( #LGitReturnCodeEnum
 			                                                                    #git_remote_init_callbacks
 			                                                                    #( #LGitRemoteCallbacksV120

@@ -1,3 +1,3 @@
 libgit - calls
 blame_free: handle
-	^ self ffiCallSafely: #(void git_blame_free #(void *handle)) options: #()
+	^ self ffiCall: #(void git_blame_free #(void *handle)) options: #()

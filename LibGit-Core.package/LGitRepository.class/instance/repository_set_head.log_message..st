@@ -2,7 +2,7 @@ libgit - calls
 repository_set_head: refname log_message: log_message
 
 	                                                               ^ self
-		                                                                 ffiCallSafely:
+		                                                                 ffiCall:
 			                                                                 #( #int
 			                                                                    #git_repository_set_head
 			                                                                    #( #self

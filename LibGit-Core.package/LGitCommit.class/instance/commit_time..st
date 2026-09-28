@@ -2,7 +2,7 @@ libgit - calls
 commit_time: commit
 
 	                                                               ^ self
-		                                                                 ffiCallSafely:
+		                                                                 ffiCall:
 		                                                                 #( #int64
 		                                                                    #git_commit_time
 		                                                                    #( #self ) )

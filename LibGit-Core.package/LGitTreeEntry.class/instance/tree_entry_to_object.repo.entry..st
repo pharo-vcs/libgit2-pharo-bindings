@@ -2,6 +2,6 @@ libgit - calls
 tree_entry_to_object: object_out repo: repo entry: entry
 	
 	^ self
-		ffiCallSafely:
+		ffiCall:
 			#(LGitReturnCodeEnum git_tree_entry_to_object #(LGitObject * object_out , LGitRepository repo , self))
 		options: #()

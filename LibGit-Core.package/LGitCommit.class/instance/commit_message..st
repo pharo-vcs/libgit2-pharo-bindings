@@ -2,7 +2,7 @@ libgit - calls
 commit_message: commit
 
 	                                                               ^ self
-		                                                                 ffiCallSafely:
+		                                                                 ffiCall:
 		                                                                 #( #void
 		                                                                    #*
 		                                                                    #git_commit_message

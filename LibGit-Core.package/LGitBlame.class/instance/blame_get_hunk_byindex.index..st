@@ -3,5 +3,5 @@ blame_get_hunk_byindex: blame index: index
 	"todo: using LGitBlameHunk* as return value causes random crashes"
 	
 	^ self
-		ffiCallSafely: #(void * git_blame_get_hunk_byindex #(self , uint32 index))
+		ffiCall: #(void * git_blame_get_hunk_byindex #(self , uint32 index))
 		options: #()

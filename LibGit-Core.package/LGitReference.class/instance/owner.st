@@ -1,3 +1,3 @@
 accessing
 owner
-	^ self ffiCallSafely: #(void * git_reference_owner #(self)) options: #()
+	^ self ffiCall: #(void * git_reference_owner #(self)) options: #()

@@ -1,5 +1,5 @@
 libgit - calls
 credentials: credentials
 	^ self
-		ffiCallSafely: #(void #(LGitCredentials * credentials))
+		ffiCall: #(void #(LGitCredentials * credentials))
 		options: #(optMayGC)

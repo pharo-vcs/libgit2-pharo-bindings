@@ -1,6 +1,6 @@
 libgit - calls
 repository_config: config
 	^ self
-		ffiCallSafely:
+		ffiCall:
 			#(LGitReturnCodeEnum git_repository_config(LGitConfig *config, self))
 		options: #()

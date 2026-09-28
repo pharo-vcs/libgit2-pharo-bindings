@@ -2,7 +2,7 @@ libgit - calls
 remote_set_url: repo remote: remote url: urlString
 
 	                                                               ^ self
-		                                                                 ffiCallSafely:
+		                                                                 ffiCall:
 			                                                                 #( #LGitReturnCodeEnum
 			                                                                    #git_remote_set_url
 			                                                                    #( #LGitRepository

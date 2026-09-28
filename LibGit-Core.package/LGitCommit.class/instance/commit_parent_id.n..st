@@ -5,7 +5,7 @@ commit_parent_id: commit n: n
 	                                                               todo:
 	                                                               'using LGitId * as return type causes a crash'>
 	                                                               ^ self
-		                                                                 ffiCallSafely:
+		                                                                 ffiCall:
 		                                                                 #( #void
 		                                                                    #*
 		                                                                    #git_commit_parent_id

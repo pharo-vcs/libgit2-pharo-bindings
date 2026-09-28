@@ -1,3 +1,3 @@
 libgit - calls
 writepack: writepack
-	^ self ffiCallSafely: #(void #(LGitOdbWritepack *writepack)) options: #()
+	^ self ffiCall: #(void #(LGitOdbWritepack *writepack)) options: #()

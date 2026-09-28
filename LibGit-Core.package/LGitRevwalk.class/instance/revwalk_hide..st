@@ -1,6 +1,6 @@
 libgit - calls
 revwalk_hide: commitId
 	^ self 
-		ffiCallSafely:
+		ffiCall:
 			#(LGitReturnCodeEnum git_revwalk_hide #(self , LGitId * commitId))
 		options: #()
