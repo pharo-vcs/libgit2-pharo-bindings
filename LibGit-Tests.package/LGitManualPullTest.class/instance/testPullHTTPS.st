@@ -14,7 +14,7 @@ testPullHTTPS
 				urlUsername: remote class usernameSsh.
 			0 ].
 	options := (repo ffiLibrary uniqueInstance fetchOptionsStructureClass defaults
-		callbacks: (self ffiLibrary uniqueInstance remoteCallbacksStructureClass defaults
+		callbacks: (repo ffiLibrary uniqueInstance remoteCallbacksStructureClass defaults
 			credentials: credentialsCallback;
 			yourself);
 		yourself).
