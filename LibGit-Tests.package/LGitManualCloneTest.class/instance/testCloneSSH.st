@@ -2,8 +2,7 @@ tests
 testCloneSSH
 	<todo: 'use a local repository once libgit2 supports cloning from fs'>
 
-	self skip. "This is failing for now"
-	"| repo |
+	| repo |
 	repo := self newRepo state0MissingReference.
 	self deny: repo exists.
 	self deny: repo isProperRepository.
@@ -13,4 +12,4 @@ testCloneSSH
 	self assert: (repo repositoryReference / '.git') exists.
 	self assert: (repo repositoryReference / '.git/HEAD') exists.
 	self assert: repo isProperRepository.
-	self shouldnt: [ repo open ] raise: LGitAbstractError"
+	self shouldnt: [ repo open ] raise: LGitAbstractError
