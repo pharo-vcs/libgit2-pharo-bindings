@@ -1,7 +1,7 @@
 tests
 testPushSSH
 	<todo: 'use a local repository once libgit2 supports cloning from fs'>
-	| repo directory head blob author builder treeId rootBuilder tree remote credentials credentialsCallback |
+	"| repo directory head blob author builder treeId rootBuilder tree remote credentials credentialsCallback |"
 
 	self skip. "clonedSSH does not exists apparently"
 	
