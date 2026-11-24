@@ -1,3 +1,0 @@
-running
-enable
-	enabled := true
