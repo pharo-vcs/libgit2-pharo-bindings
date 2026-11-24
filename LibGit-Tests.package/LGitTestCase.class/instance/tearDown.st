@@ -2,4 +2,6 @@ running
 tearDown
 
 	repository ifNotNil: [ repository free ].
-	super tearDown	
+	self localCloneReference ensureDeleteAll.
+	self localBareReference ensureDeleteAll.
+	super tearDown

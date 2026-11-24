@@ -23,6 +23,6 @@ testPullSSH
 	self assert: packDirectory exists.
 	self deny: packDirectory children isEmpty.
 	self assert: packDirectory children size equals: 2.
-	self assert: (packDirectory children contains: [ :child | child basename endsWith: '.pack' ]).
-	self assert: (packDirectory children contains: [ :child | child basename endsWith: '.idx' ]).
+	self assert: (packDirectory children anySatisfy: [ :child | child basename endsWith: '.pack' ]).
+	self assert: (packDirectory children anySatisfy: [ :child | child basename endsWith: '.idx' ]).
 	self assert: (repo workingDirectory / '.git/FETCH_HEAD') exists
