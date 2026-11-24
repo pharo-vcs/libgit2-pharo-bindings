@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "LGitTestCase",
+	"category" : "LibGit-Tests-CoreObjects",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "LGitCloneTest",
+	"type" : "normal"
+}
