@@ -1,7 +1,7 @@
 repository states
 state4WithCommit
-	<todo: 'see what cnm has to say about the update-ref change'>
-	| repo directory blob builder treeId rootBuilder tree author commitBuilder |
+
+	| repo directory blob builder treeId rootBuilder tree author |
 	repo := self state3Opened.
 	directory := (repo workingDirectory / 'libgit_tests') ensureCreateDirectory.
 	directory / 'foo' writeStreamDo: [ :stream | stream nextPutAll: 'eat my shorts' ].
@@ -15,17 +15,14 @@ state4WithCommit
 	rootBuilder addEntryWithId: treeId filename: 'libgit_tests' filemode: LGitFilemodeEnum git_filemode_tree.
 	tree := rootBuilder newTree.
 	author := LGitSignature name: 'Bart Simpson' email: 'bartman@gotham.com'.
-	(commitBuilder := LGitCommitBuilder of: repo)
+	(LGitCommitBuilder of: repo)
 		tree: tree;
 		message: 'push test';
-		parents: {};
+		parents: {  };
 		updateReference: 'refs/heads/master';
 		author: author;
 		committer: author;
-		writeCommit;
-		yourself.	"temporary workaround for updating the reference"
-	repo head resolve isHead
-		ifFalse: [ repo createBranch: 'master' targetId: commitBuilder commitId force: true ].
+		writeCommit.
 	repo index
 		addAll;
 		updateAll;
