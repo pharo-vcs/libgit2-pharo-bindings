@@ -1,0 +1,1 @@
+I test LGitConfig, the configuration of a repository.
