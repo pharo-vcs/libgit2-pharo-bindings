@@ -1,0 +1,1 @@
+I test cloning a repository with libgit2 from a local path. The source repository is created by the test itself, so no network or user input is needed.
