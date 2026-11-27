@@ -9,7 +9,7 @@ testCloneLocal
 		self deny: repo exists.
 		self deny: repo isProperRepository.
 
-		repo cloneLocal: 'file://' , remoteRepository repositoryReference fullName.
+		repo cloneLocal: (self localUrlOf: remoteRepository).
 		self assert: repo exists.
 		self assert: (repo repositoryReference / '.git') exists.
 		self assert: (repo repositoryReference / '.git/HEAD') exists.
