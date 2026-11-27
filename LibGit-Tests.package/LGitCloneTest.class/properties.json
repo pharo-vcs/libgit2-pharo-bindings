@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "<historical>",
+	"commentStamp" : "2026-11-27T17:45:56.639352+01:00",
 	"super" : "LGitTestCase",
 	"category" : "LibGit-Tests-CoreObjects",
 	"classinstvars" : [ ],
