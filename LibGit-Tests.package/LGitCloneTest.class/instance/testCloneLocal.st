@@ -14,4 +14,6 @@ testCloneLocal
 		self assert: (repo repositoryReference / '.git') exists.
 		self assert: (repo repositoryReference / '.git/HEAD') exists.
 		self assert: repo isProperRepository.
-		self shouldnt: [ repo open ] raise: LGitAbstractError ] ensure: [ cloneReference ensureDeleteAll ]
+		self shouldnt: [ repo open ] raise: LGitAbstractError ] ensure: [
+			repo ifNotNil: [ :clonedRepo | clonedRepo free ].
+			cloneReference ensureDeleteAll ]
