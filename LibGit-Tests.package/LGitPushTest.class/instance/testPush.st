@@ -2,8 +2,11 @@ tests
 testPush
 
 	| remoteRepository repo directory head blob author builder treeId rootBuilder tree remote |
+	"Clones left open keep their pack files locked on Windows, so this test is skipped on Pharo CI for now."
+	OSPlatform current isWindows ifTrue: [ self skipOnPharoCITestingEnvironment ].
 	remoteRepository := self newLocalBareRemote.
 	repo := LGitRepository on: self localCloneReference.
+	repository := repo.
 	repo cloneLocal: (self localUrlOf: remoteRepository).
 	directory := (repo workingDirectory / 'libgit_tests') ensureCreateDirectory.
 	directory / 'foo' writeStreamDo: [ :stream | stream nextPutAll: 'eat my shorts' ].
