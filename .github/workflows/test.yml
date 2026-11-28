@@ -8,7 +8,7 @@ jobs:
       fail-fast: false
       matrix:
         smalltalk: [ Pharo64-alpha ]
-        os: [ ubuntu-latest, macOS-latest ]
+        os: [ ubuntu-latest, macOS-latest, windows-latest ]
         ston: [ .smalltalk.ston ]
     runs-on: ${{ matrix.os }}
     name: ${{ matrix.smalltalk }} on ${{ matrix.os }}
