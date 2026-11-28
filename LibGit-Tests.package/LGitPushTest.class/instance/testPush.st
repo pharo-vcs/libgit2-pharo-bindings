@@ -2,8 +2,6 @@ tests
 testPush
 
 	| remoteRepository repo directory head blob author builder treeId rootBuilder tree remote |
-	"Clones left open keep their pack files locked on Windows, so this test is skipped on Pharo CI for now."
-	OSPlatform current isWindows ifTrue: [ self skipOnPharoCITestingEnvironment ].
 	remoteRepository := self newLocalBareRemote.
 	repo := LGitRepository on: self localCloneReference.
 	repository := repo.
